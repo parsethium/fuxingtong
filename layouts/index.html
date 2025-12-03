@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="hero">
+    <div class="container">
+        <h1>Welcome to {{ .Site.Title }}</h1>
+        <p>Your trusted partner in innovation</p>
+    </div>
+    <img src="/images/hero.webp" alt="Hero Image" class="hero-image">
+</div>
+
+<section class="content-section">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="/images/aerospace.webp" alt="Aerospace">
+                <h3>Aerospace Solutions</h3>
+                <p>Cutting-edge technology for the aerospace industry</p>
+            </div>
+            <div class="card">
+                <img src="/images/oilgas.webp" alt="Oil & Gas">
+                <h3>Oil & Gas Services</h3>
+                <p>Innovative solutions for energy sector challenges</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
