@@ -1,5 +1,6 @@
 ---
 title: "About Us"
+layout: "about"
 ---
 
 ## About Our Company

@@ -1,38 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>FuxingTong</title>
-    <link>https://example.org/</link>
-    <description>Recent content on FuxingTong</description>
+    <title>FXTD</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on FXTD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Additive Manufacturing</title>
+      <link>http://localhost:1313/additive-manufacturing/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/additive-manufacturing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inspection</title>
+      <link>http://localhost:1313/inspection/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/inspection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machining</title>
+      <link>http://localhost:1313/machining/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/machining/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Special Process &amp; Assembly</title>
+      <link>http://localhost:1313/special-processes/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/special-processes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Casting</title>
+      <link>http://localhost:1313/casting/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forging</title>
+      <link>http://localhost:1313/forging/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/forging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forming</title>
+      <link>http://localhost:1313/forming/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/forming/</guid>
+      <description></description>
+    </item>
     <item>
       <title>About Us</title>
-      <link>https://example.org/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;about-our-company&#34;&gt;About Our Company&lt;/h2&gt;&#xA;&lt;p&gt;We are a leading provider of innovative solutions across multiple industries.&lt;/p&gt;&#xA;&lt;h3 id=&#34;our-story&#34;&gt;Our Story&lt;/h3&gt;&#xA;&lt;p&gt;Founded with a vision to transform industries through technology and innovation, we have grown to become a trusted partner for businesses worldwide.&lt;/p&gt;&#xA;&lt;h3 id=&#34;our-mission&#34;&gt;Our Mission&lt;/h3&gt;&#xA;&lt;p&gt;To deliver exceptional products and services that exceed customer expectations while maintaining the highest standards of quality and integrity.&lt;/p&gt;&#xA;&lt;h3 id=&#34;our-values&#34;&gt;Our Values&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Innovation&lt;/li&gt;&#xA;&lt;li&gt;Excellence&lt;/li&gt;&#xA;&lt;li&gt;Integrity&lt;/li&gt;&#xA;&lt;li&gt;Customer Focus&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>Capabilities</title>
-      <link>https://example.org/capabilities/</link>
+      <title>Aviation Products</title>
+      <link>http://localhost:1313/aviation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/capabilities/</guid>
+      <guid>http://localhost:1313/aviation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Capabilities</title>
+      <link>http://localhost:1313/capabilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/capabilities/</guid>
       <description>&lt;h2 id=&#34;our-capabilities&#34;&gt;Our Capabilities&lt;/h2&gt;&#xA;&lt;p&gt;We bring decades of experience and expertise to every project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;core-competencies&#34;&gt;Core Competencies&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Research and Development&lt;/li&gt;&#xA;&lt;li&gt;Engineering Design&lt;/li&gt;&#xA;&lt;li&gt;Manufacturing Excellence&lt;/li&gt;&#xA;&lt;li&gt;Quality Control&lt;/li&gt;&#xA;&lt;li&gt;Technical Support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Our team is equipped to handle projects of any scale and complexity.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Contact</title>
-      <link>https://example.org/contact/</link>
+      <title>Contact Us</title>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/contact/</guid>
-      <description>&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h2&gt;&#xA;&lt;p&gt;We&amp;rsquo;d love to hear from you. Reach out to discuss your needs or learn more about our services.&lt;/p&gt;&#xA;&lt;h3 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:info@example.com&#34;&gt;info@example.com&lt;/a&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; +1 (555) 123-4567&#xA;&lt;strong&gt;Address:&lt;/strong&gt; 123 Business Street, Suite 100, City, State 12345&lt;/p&gt;&#xA;&lt;h3 id=&#34;business-hours&#34;&gt;Business Hours&lt;/h3&gt;&#xA;&lt;p&gt;Monday - Friday: 9:00 AM - 5:00 PM&#xA;Saturday - Sunday: Closed&lt;/p&gt;</description>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Industry News</title>
+      <link>http://localhost:1313/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Material Supply &amp; Consumables</title>
+      <link>http://localhost:1313/material-supply/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/material-supply/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oil &amp; Gas</title>
+      <link>http://localhost:1313/oilgas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/oilgas/</guid>
+      <description></description>
     </item>
     <item>
       <title>Products</title>
-      <link>https://example.org/products/</link>
+      <link>http://localhost:1313/products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/products/</guid>
+      <guid>http://localhost:1313/products/</guid>
       <description>&lt;h2 id=&#34;our-products&#34;&gt;Our Products&lt;/h2&gt;&#xA;&lt;p&gt;We offer a comprehensive range of products designed to meet the needs of modern industries.&lt;/p&gt;&#xA;&lt;h3 id=&#34;product-line&#34;&gt;Product Line&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Advanced monitoring systems&lt;/li&gt;&#xA;&lt;li&gt;Custom solutions for industrial applications&lt;/li&gt;&#xA;&lt;li&gt;Quality assurance tools&lt;/li&gt;&#xA;&lt;li&gt;Safety equipment&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Contact us to learn more about our product offerings.&lt;/p&gt;</description>
     </item>
   </channel>

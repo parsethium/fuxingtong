@@ -1,77 +1,391 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-	<meta name="generator" content="Hugo 0.152.2">
+	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FuxingTong | FuxingTong</title>
+    <title>FXTD</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
 </head>
+
 <body>
-    <header class="site-header">
+    <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <a href="/">FuxingTong</a>
-                </div>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <a href="/" class="logo">
+                    <img src="/images/home/Logo.webp" alt="Altimit Corporation">
+                </a>
+
+                
+                <button class="hamburger-menu" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <nav class="main-nav">
+
+                
+                <nav class="desktop-nav">
                     <ul>
-                        <li><a href="/products/">Products</a></li>
-                        <li><a href="/capabilities/">Capabilities</a></li>
-                        <li><a href="/about/">About Us</a></li>
-                        <li><a href="/contact/">Contact</a></li>
+                        <li class="nav-item-dropdown">
+                            <a href="#products" class="nav-link">Business Scope</a>
+                            <div class="dropdown-menu products-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/aviation/" class="dropdown-item">
+                                        <img src="/images/icons/aeroplane.webp" alt="Aviation">
+                                        <span>Aviation</span>
+                                    </a>
+                                    <a href="/oilgas/" class="dropdown-item">
+                                        <img src="/images/icons/oil-drum.webp" alt="Oil & Gas">
+                                        <span>Oil & Gas</span>
+                                    </a>
+                                    <a href="/material-supply/" class="dropdown-item">
+                                        <img src="/images/icons/wood.webp" alt="Material Supply">
+                                        <span>Material Supply</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-dropdown">
+                            <a href="#capabilities" class="nav-link">Production Capabilities</a>
+                            <div class="dropdown-menu capabilities-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/forging/" class="dropdown-item">
+                                        <img src="/images/icons/blacksmith.webp" alt="Forging">
+                                        <span>Forging</span>
+                                    </a>
+                                    <a href="/forming/" class="dropdown-item">
+                                        <img src="/images/icons/bending.webp" alt="Forming">
+                                        <span>Forming</span>
+                                    </a>
+                                    <a href="/casting/" class="dropdown-item">
+                                        <img src="/images/icons/casting.webp" alt="Casting">
+                                        <span>Casting</span>
+                                    </a>
+                                    <a href="/inspection/" class="dropdown-item">
+                                        <img src="/images/icons/magnifier.webp" alt="Inspection">
+                                        <span>Inspection</span>
+                                    </a>
+                                    <a href="/machining/" class="dropdown-item">
+                                        <img src="/images/icons/machine.webp" alt="Machining">
+                                        <span>Machining</span>
+                                    </a>
+                                    <a href="/special-processes/" class="dropdown-item">
+                                        <img src="/images/icons/teamwork.webp" alt="Special Process & Assembly">
+                                        <span>Special Processes</span>
+                                    </a>
+                                    <a href="/additive-manufacturing/" class="dropdown-item">
+                                        <img src="/images/icons/additive-manufacturing.webp"
+                                            alt="Additive Manufacturing">
+                                        <span>Additive Manufacturing</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-dropdown">
+                            <a href="#capabilities" class="nav-link">Supply Capabilities</a>
+                            <div class="dropdown-menu capabilities-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/material-supply/#raw-metals" class="dropdown-item">
+                                        <img src="/images/icons/wood.webp" alt="Forging">
+                                        <span>Raw Materials</span>
+                                    </a>
+                                    <a href="/material-supply/#material-portfolio" class="dropdown-item">
+                                        <img src="/images/icons/metal.webp" alt="Forming">
+                                        <span>Material Portfolio</span>
+                                    </a>
+                                    <a href="/material-supply/#advanced-powders" class="dropdown-item">
+                                        <img src="/images/icons/powder.webp" alt="Casting">
+                                        <span>Advanced Powders</span>
+                                    </a>
+                                    <a href="/material-supply/#joining-consumables" class="dropdown-item">
+                                        <img src="/images/icons/fabrication.webp" alt="Inspection">
+                                        <span>Joining Consumables</span>
+                                    </a>
+                                    <a href="/material-supply/#standard-parts" class="dropdown-item">
+                                        <img src="/images/icons/screw.webp" alt="Machining">
+                                        <span>Standard Parts</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/news/">News</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
+
+                
+                <div class="mobile-nav-overlay">
+                    <div class="mobile-nav-header">
+                        <button class="mobile-nav-close" aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#products" class="mobile-nav-link">Business Scope</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/aviation/">Aviation</a></li>
+                                        <li><a href="/oilgas/">Oil & Gas</a></li>
+                                        <li><a href="/material-supply/">Material Supply</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#capabilities" class="mobile-nav-link"> Production Capabilities</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/forging/">Forging</a></li>
+                                        <li><a href="/forming/">Forming</a></li>
+                                        <li><a href="/casting/">Casting</a></li>
+                                        <li><a href="/machining/">Machining</a></li>
+                                        <li><a href="/additive-manufacturing/">Additive Manufacturing</a></li>
+                                        <li><a href="/inspection/">Inspection</a></li>
+                                        <li><a href="/special-processes/">Special Processes & Assembly</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#capabilities" class="mobile-nav-link"> Supply Capabilities</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/material-supply/#raw-metals">Raw Materials</a></li>
+                                        <li><a href="/material-supply/#material-portfolio">Material Portfolio</a></li>
+                                        <li><a href="/material-supply/#advanced-powders">Advanced Powders</a></li>
+                                        <li><a href="/material-supply/#joining-consumables">Joining Consumables</a></li>
+                                        <li><a href="/material-supply/#standard-parts">Standard Parts</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/about" class="mobile-nav-link">About Us</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/contact" class="mobile-nav-link">Contact</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/news/" class="mobile-nav-link">News</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
-    <main>
 
 
-<div class="hero">
-    <div class="container">
-        <h1>Welcome to FuxingTong</h1>
-        <p>Your trusted partner in innovation</p>
+<section class="hero">
+    <div class="hero-slideshow">
+        <div class="hero-slide active" style="background-image: url('/images/home/hero-cropped.webp');"></div>
+        <div class="hero-slide" style="background-image: url('/images/home/hero2.webp');"></div>
+        <div class="hero-slide" style="background-image: url('/images/home/hero3.webp');"></div>
+        <div class="hero-slide" style="background-image: url('/images/home/hero4.webp');"></div>
+        <div class="hero-slide" style="background-image: url('/images/home/hero5.webp');"></div>
     </div>
-    <img src="/images/hero.webp" alt="Hero Image" class="hero-image">
-</div>
-
-<section class="content-section">
     <div class="container">
-        <h2>Our Services</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="/images/aerospace.webp" alt="Aerospace">
-                <h3>Aerospace Solutions</h3>
-                <p>Cutting-edge technology for the aerospace industry</p>
-            </div>
-            <div class="card">
-                <img src="/images/oilgas.webp" alt="Oil & Gas">
-                <h3>Oil & Gas Services</h3>
-                <p>Innovative solutions for energy sector challenges</p>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="typewriter-text" data-text="High-Tech Production with Zero Compromise"></h1>
+                <p>Trading company in supply and production.</p>
+                <a href="#capabilities" class="btn-primary">Explore Capabilities</a>
             </div>
         </div>
     </div>
 </section>
 
-    </main>
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 FuxingTong. All rights reserved.</p>
-        </div>
-    </footer>
-    <script>
-        
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.main-nav').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
-</body>
-</html>
 
+<section class="text-section">
+    <div class="container">
+        <h2>Why Fuxingtong?</h2>
+        <p>Altimit bridges the gap between raw material supply and advanced manufacturing, offering a single-source
+            solution for the aerospace and energy sectors. By integrating state-of-the-art precision casting, forging,
+            and additive capabilities with a rigorous quality assurance framework, we deliver critical components that
+            meet the most demanding performance standards. From certified raw alloys to finished, flight-ready hardware,
+            we ensure uncompromised quality and reliability at every step of the supply chain.
+</section>
+
+
+<section class="feature-section" id="products">
+    <div class="container">
+        <h2 class="section-title">Products</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="/images/home/material-supply.webp" alt="Material Supply" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Material Supply</h3>
+                    <p class="card-description">Providing a comprehensive inventory of high-performance raw materials,
+                        certified metal powders, welding consumables, and standard aerospace hardware.</p>
+                    <a href="/material-supply/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/aerospace.webp" alt="Aerospace" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Aviation</h3>
+                    <p class="card-description">Manufacturing critical engine hardware, including precision-cast turbine
+                        blades, structural housings, and fully integrated fuel systems for next-generation aerospace
+                        applications.</p>
+                    <a href="/aviation/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/oilgas.webp" alt="Oil & Gas" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Oil & Gas</h3>
+                    <p class="card-description">Delivering heavy-duty solutions for the energy sector, from large forged
+                        rotors and IGT vanes to wear-resistant components for power generation systems.</p>
+                    <a href="/oilgas/" class="card-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="pull-quote">
+    <div class="container">
+        <p class="quote-text">"Our strength lies in uniting advanced manufacturing with a deep understanding of
+            industrial needs. We don't just supply materials — we enable progress in the world's most demanding sectors:
+            aerospace, energy, and engineering."</p>
+        <p class="quote-author">Setareh Aghaeian, CEO</p>
+    </div>
+</section>
+
+
+<section class="feature-section" id="capabilities">
+    <div class="container">
+        <h2 class="section-title">Capabilities</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="/images/home/forging.webp" alt="Precision/Die-forging" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Forging</h3>
+                    <p class="card-description">Delivering exceptional structural integrity through closed-die forging
+                        and ring rolling of high-strength superalloys for critical rotating parts.</p>
+                    <a href="/forging/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/metalforming.webp" alt="Forming" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Forming</h3>
+                    <p class="card-description">Shaping intricate, thin-walled aerospace components using
+                        state-of-the-art hydroforming, superplastic forming, and precision tube bending technologies.
+                    </p>
+                    <a href="/forming/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/casting.webp" alt="Casting" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Casting</h3>
+                    <p class="card-description">Producing complex, high-performance components via advanced vacuum
+                        casting (Equiaxed, DS, SX) and powder metallurgy for superior dimensional accuracy.</p>
+                    <a href="/casting/" class="card-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="cards-grid">
+            <div class="card">
+                <img src="/images/home/machining.webp" alt="Machining" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Machining</h3>
+                    <p class="card-description">Achieving tight tolerances on difficult-to-machine alloys using 5-axis
+                        CNC milling, turning, and advanced EDM/ECM finishing processes.</p>
+                    <a href="/machining/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/additive.webp" alt="Additive Manufacturing" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Additive Manufacturing</h3>
+                    <p class="card-description">Enabling rapid prototyping and complex geometry production with
+                        next-generation metal 3D printing methods (PBF, LMD, WAAM).</p>
+                    <a href="/additive-manufacturing/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/specialprocess.webp" alt="Special Processes" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Special Processes</h3>
+                    <p class="card-description">Enhancing durability and performance through certified heat treatments,
+                        thermal barrier coatings, and precision joining techniques like electron beam welding.</p>
+                    <a href="/special-processes/" class="card-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="buttons-center">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+            <a href="/inspection/" class="btn-secondary">Inspection Capabilities</a>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="footer-white">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-company">
+                <h3>Qingdao Fuxingtong Forging Co. Ltd.</h3>
+                <p>Qingdao<br>Shandong Province<br>China</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="/images/icons/email.webp" alt="Email" class="contact-icon">
+                        <span>info@altimit.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/icons/phone-call.webp" alt="Phone" class="contact-icon">
+                        <span>+232142131312</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/icons/linkedin.webp" alt="LinkedIn" class="contact-icon">
+                        <span>linkedin/altimit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-column">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="/#products">Products</a></li>
+                        <li><a href="/#capabilities">Capabilities</a></li>
+                        <li><a href="/about">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

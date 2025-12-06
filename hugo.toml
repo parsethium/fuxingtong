@@ -1,4 +1,3 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://qdfuxingtong.com'
 languageCode = 'en-us'
-title = 'FuxingTong'
-disableKinds = ['taxonomy', 'term']
+title = 'FXTD'

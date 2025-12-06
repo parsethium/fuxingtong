@@ -1,15 +1,44 @@
-    </main>
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+<footer id="contact">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-company">
+                <h3>Qingdao Fuxingtong Forging Co. Ltd.</h3>
+                <p>Qingdao<br>Shandong Province<br>China</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="/images/icons/email.webp" alt="Email" class="contact-icon">
+                        <span>info@altimit.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/icons/phone-call.webp" alt="Phone" class="contact-icon">
+                        <span>+232142131312</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/icons/linkedin.webp" alt="LinkedIn" class="contact-icon">
+                        <span>linkedin/altimit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-column">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="/#products">Products</a></li>
+                        <li><a href="/#capabilities">Capabilities</a></li>
+                        <li><a href="/about">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </footer>
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.main-nav').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    </div>
+</footer>
 </body>
+
 </html>

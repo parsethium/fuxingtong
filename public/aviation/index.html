@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FXTD</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/images/home/Logo.webp" alt="Altimit Corporation">
+                </a>
+
+                
+                <button class="hamburger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                
+                <nav class="desktop-nav">
+                    <ul>
+                        <li class="nav-item-dropdown">
+                            <a href="#products" class="nav-link">Business Scope</a>
+                            <div class="dropdown-menu products-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/aviation/" class="dropdown-item">
+                                        <img src="/images/icons/aeroplane.webp" alt="Aviation">
+                                        <span>Aviation</span>
+                                    </a>
+                                    <a href="/oilgas/" class="dropdown-item">
+                                        <img src="/images/icons/oil-drum.webp" alt="Oil & Gas">
+                                        <span>Oil & Gas</span>
+                                    </a>
+                                    <a href="/material-supply/" class="dropdown-item">
+                                        <img src="/images/icons/wood.webp" alt="Material Supply">
+                                        <span>Material Supply</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-dropdown">
+                            <a href="#capabilities" class="nav-link">Production Capabilities</a>
+                            <div class="dropdown-menu capabilities-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/forging/" class="dropdown-item">
+                                        <img src="/images/icons/blacksmith.webp" alt="Forging">
+                                        <span>Forging</span>
+                                    </a>
+                                    <a href="/forming/" class="dropdown-item">
+                                        <img src="/images/icons/bending.webp" alt="Forming">
+                                        <span>Forming</span>
+                                    </a>
+                                    <a href="/casting/" class="dropdown-item">
+                                        <img src="/images/icons/casting.webp" alt="Casting">
+                                        <span>Casting</span>
+                                    </a>
+                                    <a href="/inspection/" class="dropdown-item">
+                                        <img src="/images/icons/magnifier.webp" alt="Inspection">
+                                        <span>Inspection</span>
+                                    </a>
+                                    <a href="/machining/" class="dropdown-item">
+                                        <img src="/images/icons/machine.webp" alt="Machining">
+                                        <span>Machining</span>
+                                    </a>
+                                    <a href="/special-processes/" class="dropdown-item">
+                                        <img src="/images/icons/teamwork.webp" alt="Special Process & Assembly">
+                                        <span>Special Processes</span>
+                                    </a>
+                                    <a href="/additive-manufacturing/" class="dropdown-item">
+                                        <img src="/images/icons/additive-manufacturing.webp"
+                                            alt="Additive Manufacturing">
+                                        <span>Additive Manufacturing</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-dropdown">
+                            <a href="#capabilities" class="nav-link">Supply Capabilities</a>
+                            <div class="dropdown-menu capabilities-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/material-supply/#raw-metals" class="dropdown-item">
+                                        <img src="/images/icons/wood.webp" alt="Forging">
+                                        <span>Raw Materials</span>
+                                    </a>
+                                    <a href="/material-supply/#material-portfolio" class="dropdown-item">
+                                        <img src="/images/icons/metal.webp" alt="Forming">
+                                        <span>Material Portfolio</span>
+                                    </a>
+                                    <a href="/material-supply/#advanced-powders" class="dropdown-item">
+                                        <img src="/images/icons/powder.webp" alt="Casting">
+                                        <span>Advanced Powders</span>
+                                    </a>
+                                    <a href="/material-supply/#joining-consumables" class="dropdown-item">
+                                        <img src="/images/icons/fabrication.webp" alt="Inspection">
+                                        <span>Joining Consumables</span>
+                                    </a>
+                                    <a href="/material-supply/#standard-parts" class="dropdown-item">
+                                        <img src="/images/icons/screw.webp" alt="Machining">
+                                        <span>Standard Parts</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/news/">News</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                
+                <div class="mobile-nav-overlay">
+                    <div class="mobile-nav-header">
+                        <button class="mobile-nav-close" aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#products" class="mobile-nav-link">Business Scope</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/aviation/">Aviation</a></li>
+                                        <li><a href="/oilgas/">Oil & Gas</a></li>
+                                        <li><a href="/material-supply/">Material Supply</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#capabilities" class="mobile-nav-link"> Production Capabilities</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/forging/">Forging</a></li>
+                                        <li><a href="/forming/">Forming</a></li>
+                                        <li><a href="/casting/">Casting</a></li>
+                                        <li><a href="/machining/">Machining</a></li>
+                                        <li><a href="/additive-manufacturing/">Additive Manufacturing</a></li>
+                                        <li><a href="/inspection/">Inspection</a></li>
+                                        <li><a href="/special-processes/">Special Processes & Assembly</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#capabilities" class="mobile-nav-link"> Supply Capabilities</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/material-supply/#raw-metals">Raw Materials</a></li>
+                                        <li><a href="/material-supply/#material-portfolio">Material Portfolio</a></li>
+                                        <li><a href="/material-supply/#advanced-powders">Advanced Powders</a></li>
+                                        <li><a href="/material-supply/#joining-consumables">Joining Consumables</a></li>
+                                        <li><a href="/material-supply/#standard-parts">Standard Parts</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/about" class="mobile-nav-link">About Us</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/contact" class="mobile-nav-link">Contact</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/news/" class="mobile-nav-link">News</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<section class="aviation-hero">
+    <div class="container">
+        <div class="aviation-hero-content">
+            <div class="aviation-hero-text">
+                <h1>Aviation Products</h1>
+                <div class="hero-description">
+                    <h2>Advanced Components for Aerospace Engines & Systems</h2>
+                    <p>Precision manufacturing for critical flight hardware, from hot-section turbine blades to
+                        structural housings.</p>
+                </div>
+                <a href="/#capabilities" class="btn-primary">Explore Capabilities</a>
+            </div>
+            <div class="aviation-hero-image">
+                <img src="/images/aviation/aerospace.webp" alt="Aerospace Components">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="aviation-section">
+    <div class="container">
+        <h2 class="aviation-section-title">Rotating Components</h2>
+        <div class="aviation-cards-grid">
+            <div class="aviation-card">
+                <div class="aviation-card-text">
+                    <h3>Turbine Blades</h3>
+                    <p>High-pressure and low-pressure turbine blades manufactured via precision casting (Equiaxed,
+                        Directionally Solidified, and Single-Crystal).</p>
+                </div>
+                <div class="aviation-card-image">
+                    <img src="/images/aviation/wedge-Investment Casting Blade2.webp" alt="Turbine Blades">
+                </div>
+            </div>
+            <div class="aviation-card">
+                <div class="aviation-card-text">
+                    <h3>Compressor Blades & Vanes</h3>
+                    <p>Forged and machined blades for cold-section applications.</p>
+                </div>
+                <div class="aviation-card-image">
+                    <img src="/images/aviation/vanes.webp" alt="Compressor Blades & Vanes">
+                </div>
+            </div>
+            <div class="aviation-card">
+                <div class="aviation-card-text">
+                    <h3>Disks & Rotors</h3>
+                    <p>High-precision forged disks and shafts engineered for extreme rotational speeds and temperatures.
+                    </p>
+                </div>
+                <div class="aviation-card-image">
+                    <img src="/images/aviation/disk.webp" alt="Disks & Rotors">
+                </div>
+            </div>
+            <div class="aviation-card">
+                <div class="aviation-card-text">
+                    <h3>Shafts</h3>
+                    <p>Main engine shafts produced with superior mechanical integrity.</p>
+                </div>
+                <div class="aviation-card-image">
+                    <img src="/images/aviation/ff-turbine shaft.webp" alt="Shafts">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="aviation-feature">
+    <div class="container">
+        <div class="aviation-feature-content">
+            <div class="aviation-feature-image">
+                <img src="/images/aviation/fuel.webp" alt="Fluid & Air Systems">
+            </div>
+            <div class="aviation-feature-text">
+                <h2>Fluid & Air Systems</h2>
+                <ul class="aviation-feature-list">
+                    <li><strong>Fuel Nozzles & Injectors:</strong> Precision-assembled and brazed fuel delivery systems.
+                    </li>
+                    <li><strong>Ducting & Cooling Tubes:</strong> Bent and expanded tubing for air and fluid transport
+                        within the engine.</li>
+                    <li><strong>Thin-Walled Components:</strong> Intricate exhaust and intake structures.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="aviation-section">
+    <div class="container">
+        <h2 class="aviation-section-title">Static & Structural Components</h2>
+        <div class="aviation-cards-grid">
+            <div class="aviation-card">
+                <div class="aviation-card-text">
+                    <h3>Vanes & Nozzles</h3>
+                    <p>Stator components and nozzle guide vanes with complex internal cooling geometries.</p>
+                </div>
+                <div class="aviation-card-image">
+                    <img src="/images/aviation/nozzle.webp" alt="Vanes & Nozzles">
+                </div>
+            </div>
+            <div class="aviation-card">
+                <div class="aviation-card-text">
+                    <h3>Combustion Chambers & Liners</h3>
+                    <p>Hydroformed and superplastic-formed thin-walled components for high-efficiency combustion
+                        modules.</p>
+                </div>
+                <div class="aviation-card-image">
+                    <img src="/images/aviation/chamber.webp" alt="Combustion Chambers & Liners">
+                </div>
+            </div>
+            <div class="aviation-card">
+                <div class="aviation-card-text">
+                    <h3>Engine Casings & Housings</h3>
+                    <p>Large ring-rolled and machined casings, shrouds, and air seals.</p>
+                </div>
+                <div class="aviation-card-image">
+                    <img src="/images/aviation/casing.webp" alt="Engine Casings & Housings">
+                </div>
+            </div>
+            <div class="aviation-card">
+                <div class="aviation-card-text">
+                    <h3>Structural Parts</h3>
+                    <p>Load-bearing hot-section components and lightweight titanium structural elements.</p>
+                </div>
+                <div class="aviation-card-image">
+                    <img src="/images/aviation/ff-supporting ring.webp" alt="Structural Parts">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="aviation-feature aviation-modules">
+    <div class="container">
+        <div class="aviation-feature-content">
+            <div class="aviation-feature-image">
+                <img src="/images/aviation/winway-Machining engine parts.webp" alt="Modules & Assemblies">
+            </div>
+            <div class="aviation-feature-text">
+                <h2>Modules & Assemblies</h2>
+                <ul class="aviation-feature-list">
+                    <li><strong>Turbine & Compressor Modules:</strong> Fully assembled sub-systems integrated via
+                        electron beam welding and diffusion bonding.</li>
+                    <li><strong>Combustion Modules:</strong> Complete combustion assemblies ready for engine
+                        integration.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="aviation-cta-buttons">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+            <a href="#capabilities" class="btn-secondary">Explore Capabilities</a>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="footer-white">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-company">
+                <h3>Qingdao Fuxingtong Forging Co. Ltd.</h3>
+                <p>Qingdao<br>Shandong Province<br>China</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="/images/icons/email.webp" alt="Email" class="contact-icon">
+                        <span>info@altimit.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/icons/phone-call.webp" alt="Phone" class="contact-icon">
+                        <span>+232142131312</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/icons/linkedin.webp" alt="LinkedIn" class="contact-icon">
+                        <span>linkedin/altimit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-column">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="/#products">Products</a></li>
+                        <li><a href="/#capabilities">Capabilities</a></li>
+                        <li><a href="/about">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

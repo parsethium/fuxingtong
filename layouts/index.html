@@ -1,27 +1,155 @@
-{{ define "main" }}
-<div class="hero">
-    <div class="container">
-        <h1>Welcome to {{ .Site.Title }}</h1>
-        <p>Your trusted partner in innovation</p>
-    </div>
-    <img src="/images/hero.webp" alt="Hero Image" class="hero-image">
-</div>
+{{ partial "header.html" . }}
 
-<section class="content-section">
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-slideshow">
+        <div class="hero-slide active" style="background-image: url('/images/home/hero-cropped.webp');"></div>
+        <div class="hero-slide" style="background-image: url('/images/home/hero2.webp');"></div>
+        <div class="hero-slide" style="background-image: url('/images/home/hero3.webp');"></div>
+        <div class="hero-slide" style="background-image: url('/images/home/hero4.webp');"></div>
+        <div class="hero-slide" style="background-image: url('/images/home/hero5.webp');"></div>
+    </div>
     <div class="container">
-        <h2>Our Services</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="/images/aerospace.webp" alt="Aerospace">
-                <h3>Aerospace Solutions</h3>
-                <p>Cutting-edge technology for the aerospace industry</p>
-            </div>
-            <div class="card">
-                <img src="/images/oilgas.webp" alt="Oil & Gas">
-                <h3>Oil & Gas Services</h3>
-                <p>Innovative solutions for energy sector challenges</p>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="typewriter-text" data-text="High-Tech Production with Zero Compromise"></h1>
+                <p>Trading company in supply and production.</p>
+                <a href="#capabilities" class="btn-primary">Explore Capabilities</a>
             </div>
         </div>
     </div>
 </section>
-{{ end }}
+
+<!-- Why Altimit Section -->
+<section class="text-section">
+    <div class="container">
+        <h2>Why Fuxingtong?</h2>
+        <p>Altimit bridges the gap between raw material supply and advanced manufacturing, offering a single-source
+            solution for the aerospace and energy sectors. By integrating state-of-the-art precision casting, forging,
+            and additive capabilities with a rigorous quality assurance framework, we deliver critical components that
+            meet the most demanding performance standards. From certified raw alloys to finished, flight-ready hardware,
+            we ensure uncompromised quality and reliability at every step of the supply chain.
+</section>
+
+<!-- Feature Cards 1 -->
+<section class="feature-section" id="products">
+    <div class="container">
+        <h2 class="section-title">Products</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="/images/home/material-supply.webp" alt="Material Supply" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Material Supply</h3>
+                    <p class="card-description">Providing a comprehensive inventory of high-performance raw materials,
+                        certified metal powders, welding consumables, and standard aerospace hardware.</p>
+                    <a href="/material-supply/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/aerospace.webp" alt="Aerospace" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Aviation</h3>
+                    <p class="card-description">Manufacturing critical engine hardware, including precision-cast turbine
+                        blades, structural housings, and fully integrated fuel systems for next-generation aerospace
+                        applications.</p>
+                    <a href="/aviation/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/oilgas.webp" alt="Oil & Gas" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Oil & Gas</h3>
+                    <p class="card-description">Delivering heavy-duty solutions for the energy sector, from large forged
+                        rotors and IGT vanes to wear-resistant components for power generation systems.</p>
+                    <a href="/oilgas/" class="card-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pull Quote -->
+<section class="pull-quote">
+    <div class="container">
+        <p class="quote-text">"Our strength lies in uniting advanced manufacturing with a deep understanding of
+            industrial needs. We don't just supply materials — we enable progress in the world's most demanding sectors:
+            aerospace, energy, and engineering."</p>
+        <p class="quote-author">Setareh Aghaeian, CEO</p>
+    </div>
+</section>
+
+<!-- Capabilities Section -->
+<section class="feature-section" id="capabilities">
+    <div class="container">
+        <h2 class="section-title">Capabilities</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="/images/home/forging.webp" alt="Precision/Die-forging" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Forging</h3>
+                    <p class="card-description">Delivering exceptional structural integrity through closed-die forging
+                        and ring rolling of high-strength superalloys for critical rotating parts.</p>
+                    <a href="/forging/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/metalforming.webp" alt="Forming" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Forming</h3>
+                    <p class="card-description">Shaping intricate, thin-walled aerospace components using
+                        state-of-the-art hydroforming, superplastic forming, and precision tube bending technologies.
+                    </p>
+                    <a href="/forming/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/casting.webp" alt="Casting" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Casting</h3>
+                    <p class="card-description">Producing complex, high-performance components via advanced vacuum
+                        casting (Equiaxed, DS, SX) and powder metallurgy for superior dimensional accuracy.</p>
+                    <a href="/casting/" class="card-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Cards -->
+        <div class="cards-grid">
+            <div class="card">
+                <img src="/images/home/machining.webp" alt="Machining" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Machining</h3>
+                    <p class="card-description">Achieving tight tolerances on difficult-to-machine alloys using 5-axis
+                        CNC milling, turning, and advanced EDM/ECM finishing processes.</p>
+                    <a href="/machining/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/additive.webp" alt="Additive Manufacturing" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Additive Manufacturing</h3>
+                    <p class="card-description">Enabling rapid prototyping and complex geometry production with
+                        next-generation metal 3D printing methods (PBF, LMD, WAAM).</p>
+                    <a href="/additive-manufacturing/" class="card-link">Explore →</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/home/specialprocess.webp" alt="Special Processes" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Special Processes</h3>
+                    <p class="card-description">Enhancing durability and performance through certified heat treatments,
+                        thermal barrier coatings, and precision joining techniques like electron beam welding.</p>
+                    <a href="/special-processes/" class="card-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="buttons-center">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+            <a href="/inspection/" class="btn-secondary">Inspection Capabilities</a>
+        </div>
+    </div>
+</section>
+
+{{ partial "footer_white.html" . }}

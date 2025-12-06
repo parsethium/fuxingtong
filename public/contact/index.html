@@ -1,68 +1,319 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | FuxingTong</title>
+    <title>FXTD</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
 </head>
+
 <body>
-    <header class="site-header">
+    <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <a href="/">FuxingTong</a>
-                </div>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <a href="/" class="logo">
+                    <img src="/images/home/Logo.webp" alt="Altimit Corporation">
+                </a>
+
+                
+                <button class="hamburger-menu" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <nav class="main-nav">
+
+                
+                <nav class="desktop-nav">
                     <ul>
-                        <li><a href="/products/">Products</a></li>
-                        <li><a href="/capabilities/">Capabilities</a></li>
-                        <li><a href="/about/">About Us</a></li>
-                        <li><a href="/contact/">Contact</a></li>
+                        <li class="nav-item-dropdown">
+                            <a href="#products" class="nav-link">Business Scope</a>
+                            <div class="dropdown-menu products-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/aviation/" class="dropdown-item">
+                                        <img src="/images/icons/aeroplane.webp" alt="Aviation">
+                                        <span>Aviation</span>
+                                    </a>
+                                    <a href="/oilgas/" class="dropdown-item">
+                                        <img src="/images/icons/oil-drum.webp" alt="Oil & Gas">
+                                        <span>Oil & Gas</span>
+                                    </a>
+                                    <a href="/material-supply/" class="dropdown-item">
+                                        <img src="/images/icons/wood.webp" alt="Material Supply">
+                                        <span>Material Supply</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-dropdown">
+                            <a href="#capabilities" class="nav-link">Production Capabilities</a>
+                            <div class="dropdown-menu capabilities-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/forging/" class="dropdown-item">
+                                        <img src="/images/icons/blacksmith.webp" alt="Forging">
+                                        <span>Forging</span>
+                                    </a>
+                                    <a href="/forming/" class="dropdown-item">
+                                        <img src="/images/icons/bending.webp" alt="Forming">
+                                        <span>Forming</span>
+                                    </a>
+                                    <a href="/casting/" class="dropdown-item">
+                                        <img src="/images/icons/casting.webp" alt="Casting">
+                                        <span>Casting</span>
+                                    </a>
+                                    <a href="/inspection/" class="dropdown-item">
+                                        <img src="/images/icons/magnifier.webp" alt="Inspection">
+                                        <span>Inspection</span>
+                                    </a>
+                                    <a href="/machining/" class="dropdown-item">
+                                        <img src="/images/icons/machine.webp" alt="Machining">
+                                        <span>Machining</span>
+                                    </a>
+                                    <a href="/special-processes/" class="dropdown-item">
+                                        <img src="/images/icons/teamwork.webp" alt="Special Process & Assembly">
+                                        <span>Special Processes</span>
+                                    </a>
+                                    <a href="/additive-manufacturing/" class="dropdown-item">
+                                        <img src="/images/icons/additive-manufacturing.webp"
+                                            alt="Additive Manufacturing">
+                                        <span>Additive Manufacturing</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item-dropdown">
+                            <a href="#capabilities" class="nav-link">Supply Capabilities</a>
+                            <div class="dropdown-menu capabilities-dropdown">
+                                <div class="dropdown-arrow"></div>
+                                <div class="dropdown-header"></div>
+                                <div class="dropdown-content">
+                                    <a href="/material-supply/#raw-metals" class="dropdown-item">
+                                        <img src="/images/icons/wood.webp" alt="Forging">
+                                        <span>Raw Materials</span>
+                                    </a>
+                                    <a href="/material-supply/#material-portfolio" class="dropdown-item">
+                                        <img src="/images/icons/metal.webp" alt="Forming">
+                                        <span>Material Portfolio</span>
+                                    </a>
+                                    <a href="/material-supply/#advanced-powders" class="dropdown-item">
+                                        <img src="/images/icons/powder.webp" alt="Casting">
+                                        <span>Advanced Powders</span>
+                                    </a>
+                                    <a href="/material-supply/#joining-consumables" class="dropdown-item">
+                                        <img src="/images/icons/fabrication.webp" alt="Inspection">
+                                        <span>Joining Consumables</span>
+                                    </a>
+                                    <a href="/material-supply/#standard-parts" class="dropdown-item">
+                                        <img src="/images/icons/screw.webp" alt="Machining">
+                                        <span>Standard Parts</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/news/">News</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
+
+                
+                <div class="mobile-nav-overlay">
+                    <div class="mobile-nav-header">
+                        <button class="mobile-nav-close" aria-label="Close menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#products" class="mobile-nav-link">Business Scope</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/aviation/">Aviation</a></li>
+                                        <li><a href="/oilgas/">Oil & Gas</a></li>
+                                        <li><a href="/material-supply/">Material Supply</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#capabilities" class="mobile-nav-link"> Production Capabilities</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/forging/">Forging</a></li>
+                                        <li><a href="/forming/">Forming</a></li>
+                                        <li><a href="/casting/">Casting</a></li>
+                                        <li><a href="/machining/">Machining</a></li>
+                                        <li><a href="/additive-manufacturing/">Additive Manufacturing</a></li>
+                                        <li><a href="/inspection/">Inspection</a></li>
+                                        <li><a href="/special-processes/">Special Processes & Assembly</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item mobile-nav-dropdown">
+                                <div class="mobile-nav-link-wrapper">
+                                    <a href="#capabilities" class="mobile-nav-link"> Supply Capabilities</a>
+                                    <span class="mobile-nav-arrow">▼</span>
+                                </div>
+                                <div class="mobile-submenu-wrapper">
+                                    <ul class="mobile-submenu">
+                                        <li><a href="/material-supply/#raw-metals">Raw Materials</a></li>
+                                        <li><a href="/material-supply/#material-portfolio">Material Portfolio</a></li>
+                                        <li><a href="/material-supply/#advanced-powders">Advanced Powders</a></li>
+                                        <li><a href="/material-supply/#joining-consumables">Joining Consumables</a></li>
+                                        <li><a href="/material-supply/#standard-parts">Standard Parts</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/about" class="mobile-nav-link">About Us</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/contact" class="mobile-nav-link">Contact</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="/news/" class="mobile-nav-link">News</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
-    <main>
 
 
-<div class="page-content">
+<section class="contact-hero">
     <div class="container">
-        <h1>Contact</h1>
-        <article>
-            <h2 id="get-in-touch">Get in Touch</h2>
-<p>We&rsquo;d love to hear from you. Reach out to discuss your needs or learn more about our services.</p>
-<h3 id="contact-information">Contact Information</h3>
-<p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a>
-<strong>Phone:</strong> +1 (555) 123-4567
-<strong>Address:</strong> 123 Business Street, Suite 100, City, State 12345</p>
-<h3 id="business-hours">Business Hours</h3>
-<p>Monday - Friday: 9:00 AM - 5:00 PM
-Saturday - Sunday: Closed</p>
-
-        </article>
+        <a href="/" class="breadcrumb">←Home</a>
+        <h1>Contact Us</h1>
+        <p class="contact-subtitle">Get in touch with our team. We'd love to hear from you.</p>
     </div>
-</div>
+</section>
 
-    </main>
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 FuxingTong. All rights reserved.</p>
+
+<section class="contact-content">
+    <div class="container">
+        <div class="contact-grid">
+            
+            <div class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form action="https://formspree.io/f/xkgdzlyj" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" placeholder="Your company name">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            
+            <div class="contact-info-section">
+                <div class="contact-info-card">
+                    <h2>Contact Information</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>Address</h4>
+                            <p>Qingdao, Shandong Province<br>China</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Email</h4>
+                            <p>info@fuxingtong.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wechat-card">
+                    <h3>Connect on WeChat</h3>
+                    <p>Scan the QR code to connect with us</p>
+                    <img src="/images/icons/wechat.webp" alt="WeChat QR Code" class="wechat-qr">
+                </div>
+            </div>
         </div>
-    </footer>
-    <script>
-        
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.main-nav').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
-</body>
-</html>
+    </div>
+</section>
 
+
+<section class="contact-map">
+    <div class="container">
+        <h2>Our Location</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6453.200590839476!2d120.1920088!3d36.0300529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3596073ce7bd1cbf%3A0x83f17bb1c19600b4!2sQingdao%20Guangshan%20Precision%20Machinery%20Limited%20Company!5e0!3m2!1sen!2sse!4v1765060998257!5m2!1sen!2sse"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="footer-white">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-company">
+                <h3>Qingdao Fuxingtong Forging Co. Ltd.</h3>
+                <p>Qingdao<br>Shandong Province<br>China</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="/images/icons/email.webp" alt="Email" class="contact-icon">
+                        <span>info@altimit.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/icons/phone-call.webp" alt="Phone" class="contact-icon">
+                        <span>+232142131312</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/icons/linkedin.webp" alt="LinkedIn" class="contact-icon">
+                        <span>linkedin/altimit</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-column">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="/#products">Products</a></li>
+                        <li><a href="/#capabilities">Capabilities</a></li>
+                        <li><a href="/about">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
