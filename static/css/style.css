@@ -353,7 +353,7 @@ nav a:hover {
 .capabilities-dropdown .dropdown-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px 20px;
+    gap: 8px 20px;
 }
 
 .dropdown-item {
@@ -377,11 +377,17 @@ nav a:hover {
     width: 28px;
     height: 28px;
     object-fit: contain;
+    flex-shrink: 0;
+}
+
+.capabilities-dropdown .dropdown-item {
+    min-height: 52px;
 }
 
 .capabilities-dropdown .dropdown-item img {
     width: 30px;
     height: 30px;
+    flex-shrink: 0;
 }
 
 /* Hero Section */
@@ -653,6 +659,72 @@ nav a:hover {
     margin-top: 60px;
 }
 
+/* Partners Section */
+.partners-section {
+    padding: 80px 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.partners-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #293241;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.partners-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.partners-slider::before,
+.partners-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.partners-slider::before {
+    left: 0;
+    background: linear-gradient(to right, #fff, transparent);
+}
+
+.partners-slider::after {
+    right: 0;
+    background: linear-gradient(to left, #fff, transparent);
+}
+
+.partners-track {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    animation: scroll 40s linear infinite;
+    width: max-content;
+}
+
+.partners-track img {
+    height: 110px;
+    width: auto;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 /* Footer */
 footer {
     background: #293241;
@@ -759,6 +831,33 @@ footer {
 
 .footer-white .footer-column a:hover {
     color: #39A6D5;
+}
+
+/* Footer Footnote */
+.footer-footnote {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.footer-footnote a {
+    color: #999;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-footnote a:hover {
+    color: #39A6D5;
+}
+
+.footer-white .footer-footnote {
+    border-top-color: #e5e5e5;
+}
+
+.footer-white .footer-footnote a {
+    color: #666;
 }
 
 
@@ -4298,6 +4397,24 @@ footer {
     max-width: 200px;
     height: auto;
     border-radius: 12px;
+}
+
+.wechat-qr-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wechat-qr-item {
+    text-align: center;
+}
+
+.wechat-qr-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #293241;
+    margin: 0 0 12px 0;
 }
 
 /* Map Section */
