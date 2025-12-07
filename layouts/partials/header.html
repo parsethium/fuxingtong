@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Preload hero images for faster LCP -->
+    {{ if .IsHome }}
+    <link rel="preload" href="/images/home/hero-cropped.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="/images/home/hero2.webp" as="image" type="image/webp">
+    <link rel="preload" href="/images/home/hero3.webp" as="image" type="image/webp">
+    <link rel="preload" href="/images/home/hero4.webp" as="image" type="image/webp">
+    <link rel="preload" href="/images/home/forging.webp" as="image" type="image/webp">
+    {{ end }}
+
     <script src="/js/main.js" defer></script>
 </head>
 
