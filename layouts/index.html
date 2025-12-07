@@ -20,6 +20,26 @@
     </div>
 </section>
 
+<!-- Critical: Start typewriter immediately for better perceived performance -->
+<script>
+    (function () {
+        const el = document.getElementById('typewriter-text');
+        if (el) {
+            const text = el.getAttribute('data-text');
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    el.textContent = text.substring(0, ++i);
+                    setTimeout(type, 80);
+                } else {
+                    setTimeout(() => el.classList.add('typing-complete'), 500);
+                }
+            }
+            type();
+        }
+    })();
+</script>
+
 <!-- Why Altimit Section -->
 <section class="text-section">
     <div class="container">

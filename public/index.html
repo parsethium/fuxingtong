@@ -227,6 +227,26 @@
 </section>
 
 
+<script>
+    (function () {
+        const el = document.getElementById('typewriter-text');
+        if (el) {
+            const text = el.getAttribute('data-text');
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    el.textContent = text.substring(0, ++i);
+                    setTimeout(type, 80);
+                } else {
+                    setTimeout(() => el.classList.add('typing-complete'), 500);
+                }
+            }
+            type();
+        }
+    })();
+</script>
+
+
 <section class="text-section">
     <div class="container">
         <h2>Why Fuxingtong?</h2>

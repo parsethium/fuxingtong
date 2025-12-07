@@ -97,29 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Typewriter animation
-    const typewriterElement = document.getElementById('typewriter-text');
-    if (typewriterElement) {
-        const text = typewriterElement.getAttribute('data-text');
-        let charIndex = 0;
-
-        function typeChar() {
-            if (charIndex < text.length) {
-                typewriterElement.textContent = text.substring(0, charIndex + 1);
-                charIndex++;
-                setTimeout(typeChar, 80); // Speed of typing (80ms per character)
-            } else {
-                // Add class to remove cursor after typing is complete
-                setTimeout(() => {
-                    typewriterElement.classList.add('typing-complete');
-                }, 500); // Wait 500ms before removing cursor
-            }
-        }
-
-        // Start typing after a short delay
-        setTimeout(typeChar, 300);
-    }
-
     // Hero Image Slideshow
     const heroSlides = document.querySelectorAll('.hero-slide');
     if (heroSlides.length > 0) {
@@ -143,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Forging Page - Explore More Button
     const forgingExploreBtn = document.getElementById('forging-explore-btn');
     if (forgingExploreBtn) {
-        forgingExploreBtn.addEventListener('click', function() {
+        forgingExploreBtn.addEventListener('click', function () {
             const fabricationSection = document.getElementById('forging-fabrication-steps');
             const sampleProductsSection = document.getElementById('forging-sample-products');
 
@@ -170,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Casting Page - Explore More Button
     const castingExploreBtn = document.getElementById('casting-explore-btn');
     if (castingExploreBtn) {
-        castingExploreBtn.addEventListener('click', function() {
+        castingExploreBtn.addEventListener('click', function () {
             const processSection = document.getElementById('casting-process-section');
             const powderSection = document.getElementById('casting-powder-section');
             const sampleProductsSection = document.getElementById('casting-sample-products');
@@ -201,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Machining Page - Explore More Button
     const machiningExploreBtn = document.getElementById('machining-explore-btn');
     if (machiningExploreBtn) {
-        machiningExploreBtn.addEventListener('click', function() {
+        machiningExploreBtn.addEventListener('click', function () {
             const sampleProductsSection = document.getElementById('machining-sample-products');
 
             // Reveal the section
@@ -224,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Forming Page - Explore More Button
     const formingExploreBtn = document.getElementById('forming-explore-btn');
     if (formingExploreBtn) {
-        formingExploreBtn.addEventListener('click', function() {
+        formingExploreBtn.addEventListener('click', function () {
             const fabricationSection = document.getElementById('forming-fabrication-steps');
             const sampleProductsSection = document.getElementById('forming-sample-products');
 
@@ -251,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Additive Manufacturing Page - Explore More Button
     const additiveExploreBtn = document.getElementById('additive-explore-btn');
     if (additiveExploreBtn) {
-        additiveExploreBtn.addEventListener('click', function() {
+        additiveExploreBtn.addEventListener('click', function () {
             const sampleProductsSection = document.getElementById('additive-sample-products');
 
             // Reveal the section
