@@ -1,17 +1,14 @@
-// Immediate hash navigation - scroll to target before content renders
+// Hash navigation - scroll to target and reveal page
 (function () {
     if (window.location.hash) {
-        // Hide page briefly to prevent flash of top content
-        document.documentElement.style.visibility = 'hidden';
-
         window.addEventListener('DOMContentLoaded', function () {
             const target = document.querySelector(window.location.hash);
             if (target) {
                 // Scroll immediately without animation
                 target.scrollIntoView();
             }
-            // Show page after scroll
-            document.documentElement.style.visibility = 'visible';
+            // Show page after scroll (page was hidden by inline script in head)
+            document.documentElement.style.opacity = '1';
         });
     }
 })();
