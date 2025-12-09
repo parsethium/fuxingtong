@@ -568,7 +568,7 @@ nav a:hover {
 }
 
 .text-section p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.8;
     color: rgba(41, 50, 65, 1);
     max-width: 1152px;
@@ -787,55 +787,74 @@ nav a:hover {
     margin-bottom: 48px;
 }
 
-.partners-slider {
+.partners-carousel {
     width: 100%;
-    overflow: hidden;
     position: relative;
+    padding: 0 64px;
 }
 
-.partners-slider::before,
-.partners-slider::after {
-    content: '';
+.partners-pages {
+    position: relative;
+    min-height: 100px;
+}
+
+.partners-page {
     position: absolute;
     top: 0;
-    width: 150px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.partners-slider::before {
     left: 0;
-    background: linear-gradient(to right, #fff, transparent);
-}
-
-.partners-slider::after {
     right: 0;
-    background: linear-gradient(to left, #fff, transparent);
-}
-
-.partners-track {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
-    animation: scroll 40s linear infinite;
-    width: max-content;
+    gap: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.partners-track img {
-    height: 110px;
+.partners-page.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+}
+
+.partners-page img {
+    height: 100px;
     width: auto;
     object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+.partners-page img:hover {
+    transform: scale(1.05);
+}
 
-    100% {
-        transform: translateX(-50%);
-    }
+.partners-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.partners-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #d1d5db;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.partners-dot:hover {
+    background: #9ca3af;
+}
+
+.partners-dot.active {
+    background: #39A6D5;
+    transform: scale(1.2);
 }
 
 /* Footer */
@@ -1555,7 +1574,9 @@ footer {
     }
 
     .logo-text {
-        display: none;
+        display: block;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
     .hero-content {
@@ -2979,7 +3000,7 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
     height: 220px;
     width: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .sample-product-caption {

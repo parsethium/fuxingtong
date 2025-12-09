@@ -1,3 +1,21 @@
+// Immediate hash navigation - scroll to target before content renders
+(function () {
+    if (window.location.hash) {
+        // Hide page briefly to prevent flash of top content
+        document.documentElement.style.visibility = 'hidden';
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                // Scroll immediately without animation
+                target.scrollIntoView();
+            }
+            // Show page after scroll
+            document.documentElement.style.visibility = 'visible';
+        });
+    }
+})();
+
 // Mobile Navigation Menu
 document.addEventListener('DOMContentLoaded', function () {
     const hamburgerBtn = document.querySelector('.hamburger-menu');
@@ -306,5 +324,69 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }, 100);
         });
+    }
+
+    // Partners Carousel Dot Navigation
+    const partnersDots = document.querySelectorAll('.partners-dot');
+    const partnersPages = document.querySelectorAll('.partners-page');
+    const partnersSection = document.querySelector('.partners-section');
+
+    if (partnersDots.length > 0 && partnersPages.length > 0 && partnersSection) {
+        let currentPartnerPage = 0;
+        let partnersAutoRotate = null;
+        let hasStartedRotation = false;
+
+        function showPartnersPage(pageIndex) {
+            // Remove active from all pages and dots
+            partnersPages.forEach(page => page.classList.remove('active'));
+            partnersDots.forEach(dot => dot.classList.remove('active'));
+
+            // Add active to the selected page and dot
+            partnersPages[pageIndex].classList.add('active');
+            partnersDots[pageIndex].classList.add('active');
+            currentPartnerPage = pageIndex;
+        }
+
+        function nextPartnersPage() {
+            const nextPage = (currentPartnerPage + 1) % partnersPages.length;
+            showPartnersPage(nextPage);
+        }
+
+        function startAutoRotation() {
+            if (!partnersAutoRotate) {
+                partnersAutoRotate = setInterval(nextPartnersPage, 5000);
+            }
+        }
+
+        function stopAutoRotation() {
+            if (partnersAutoRotate) {
+                clearInterval(partnersAutoRotate);
+                partnersAutoRotate = null;
+            }
+        }
+
+        // Click handler for dots
+        partnersDots.forEach(dot => {
+            dot.addEventListener('click', function () {
+                const pageIndex = parseInt(this.getAttribute('data-page'));
+                showPartnersPage(pageIndex);
+
+                // Reset auto-rotation timer on user interaction
+                stopAutoRotation();
+                startAutoRotation();
+            });
+        });
+
+        // Use IntersectionObserver to start auto-rotation when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasStartedRotation) {
+                    hasStartedRotation = true;
+                    startAutoRotation();
+                }
+            });
+        }, { threshold: 0.3 });
+
+        observer.observe(partnersSection);
     }
 });
