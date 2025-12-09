@@ -5,6 +5,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeBtn = document.querySelector('.mobile-nav-close');
     const mobileDropdowns = document.querySelectorAll('.mobile-nav-dropdown');
 
+    // Smart Header - Hide on scroll down, show on scroll up
+    const header = document.querySelector('header');
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    function updateHeader() {
+        const currentScrollY = window.scrollY;
+
+        // Only hide header after scrolling past the header height
+        if (currentScrollY > 100) {
+            if (currentScrollY > lastScrollY) {
+                // Scrolling down - hide header
+                header.classList.add('header-hidden');
+            } else {
+                // Scrolling up - show header
+                header.classList.remove('header-hidden');
+            }
+        } else {
+            // At the top of the page - always show header
+            header.classList.remove('header-hidden');
+        }
+
+        lastScrollY = currentScrollY;
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+        if (!ticking) {
+            window.requestAnimationFrame(updateHeader);
+            ticking = true;
+        }
+    }, { passive: true });
+
     function closeMobileMenu() {
         if (mobileOverlay) {
             mobileOverlay.classList.remove('active');
@@ -229,7 +262,34 @@ document.addEventListener('DOMContentLoaded', function () {
     const additiveExploreBtn = document.getElementById('additive-explore-btn');
     if (additiveExploreBtn) {
         additiveExploreBtn.addEventListener('click', function () {
+            const processSection = document.getElementById('additive-process-steps');
             const sampleProductsSection = document.getElementById('additive-sample-products');
+
+            // Reveal the sections
+            if (processSection) {
+                processSection.classList.add('revealed');
+            }
+            if (sampleProductsSection) {
+                sampleProductsSection.classList.add('revealed');
+            }
+
+            // Hide the explore button after clicking
+            additiveExploreBtn.style.display = 'none';
+
+            // Smooth scroll to the revealed content
+            setTimeout(() => {
+                if (processSection) {
+                    processSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    }
+
+    // Inspection Page - Explore More Button
+    const inspectionExploreBtn = document.getElementById('inspection-explore-btn');
+    if (inspectionExploreBtn) {
+        inspectionExploreBtn.addEventListener('click', function () {
+            const sampleProductsSection = document.getElementById('inspection-sample-products');
 
             // Reveal the section
             if (sampleProductsSection) {
@@ -237,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // Hide the explore button after clicking
-            additiveExploreBtn.style.display = 'none';
+            inspectionExploreBtn.style.display = 'none';
 
             // Smooth scroll to the revealed content
             setTimeout(() => {

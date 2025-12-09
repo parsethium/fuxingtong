@@ -30,6 +30,14 @@ header {
     padding: 21.5px 0;
     background: #fff;
     border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+header.header-hidden {
+    transform: translateY(-100%);
 }
 
 .header-content {
@@ -38,12 +46,18 @@ header {
     align-items: center;
 }
 
+.desktop-nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
-    display: block;
-    width: 80px;
-    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     cursor: pointer;
     transition: opacity 0.3s;
+    text-decoration: none;
 }
 
 .logo:hover {
@@ -51,9 +65,16 @@ header {
 }
 
 .logo img {
-    width: 130%;
-    height: 120%;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #293241;
+    white-space: nowrap;
 }
 
 /* Hamburger Menu (Mobile Only) */
@@ -98,7 +119,7 @@ nav a {
     text-decoration: none;
     color: #293241;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     transition: color 0.3s;
 }
 
@@ -630,7 +651,7 @@ nav a:hover {
 
 /* Pull Quote */
 .pull-quote {
-    padding: 72px 0;
+    padding: 30px 0;
     background: #fff;
     text-align: center;
 }
@@ -648,7 +669,6 @@ nav a:hover {
     font-size: 18px;
     font-weight: 600;
     color: rgba(41, 50, 65, 1);
-    ;
 }
 
 /* Buttons Section */
@@ -659,9 +679,102 @@ nav a:hover {
     margin-top: 60px;
 }
 
+/* Our Advantages Section */
+.advantages-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.advantages-section .section-title {
+    color: #293241;
+    text-align: center;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    margin-top: 48px;
+}
+
+.advantages-column-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #293241;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #39A6D5;
+}
+
+.advantages-column-intro {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.55);
+    margin-bottom: 32px;
+}
+
+.advantage-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.advantage-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+}
+
+.advantage-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.advantage-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #293241;
+    margin-bottom: 8px;
+}
+
+.advantage-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.55);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .advantages-column-title {
+        font-size: 20px;
+    }
+
+    .advantage-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .buttons-center {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buttons-center .btn-primary,
+    .buttons-center .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* Partners Section */
 .partners-section {
-    padding: 80px 0;
+    padding: 50px 0;
     background: #fff;
     overflow: hidden;
 }
@@ -1237,17 +1350,19 @@ footer {
 
 .oilgas-card-image {
     width: 100%;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 32px;
     background: #f5f5f5;
+    margin-top: auto;
 }
 
 .oilgas-card-image img {
-    max-width: 348px;
-    max-height: 348px;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
     height: auto;
     object-fit: contain;
     border-radius: 8px;
@@ -1392,6 +1507,27 @@ footer {
     color: #fff;
 }
 
+/* Oilgas Modules Section - White Background */
+.oilgas-modules {
+    background: #fff;
+}
+
+.oilgas-modules .oilgas-feature-text h2 {
+    color: #293241;
+}
+
+.oilgas-modules .oilgas-feature-list li {
+    color: #666;
+}
+
+.oilgas-modules .oilgas-feature-list li strong {
+    color: #293241;
+}
+
+.oilgas-modules .oilgas-cta-buttons .btn-secondary {
+    color: #293241;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 
@@ -1416,6 +1552,10 @@ footer {
     .logo {
         width: 70px;
         height: 46px;
+    }
+
+    .logo-text {
+        display: none;
     }
 
     .hero-content {
@@ -1451,8 +1591,12 @@ footer {
     }
 
     /* Aviation page responsive */
+    .aviation-hero {
+        padding: 80px 0 60px;
+    }
+
     .aviation-hero-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 32px;
     }
 
@@ -1494,8 +1638,12 @@ footer {
     }
 
     /* Oil & Gas page responsive */
+    .oilgas-hero {
+        padding: 80px 0 60px;
+    }
+
     .oilgas-hero-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 32px;
     }
 
@@ -2096,6 +2244,25 @@ footer {
     padding: 80px 0 !important;
 }
 
+/* Inspection Hidden Sections */
+.inspection-hidden-section {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    transition: max-height 0.8s ease-in-out, opacity 0.6s ease-in-out, padding 0.8s ease-in-out;
+}
+
+.inspection-hidden-section.revealed {
+    max-height: 5000px;
+    opacity: 1;
+}
+
+.inspection-hidden-section.revealed.machining-sample-products {
+    padding: 80px 0 !important;
+}
+
 /* Forming Hidden Sections */
 .forming-hidden-section {
     max-height: 0;
@@ -2136,6 +2303,10 @@ footer {
 
 .additive-hidden-section.revealed.machining-sample-products {
     padding: 80px 0 !important;
+}
+
+.additive-hidden-section.revealed.additive-materials {
+    padding: 100px 0 !important;
 }
 
 .forging-cta-buttons .btn-primary:hover {
@@ -2352,7 +2523,7 @@ footer {
 }
 
 .forming-products {
-    padding: 40px 0 120px;
+    padding: 40px 0 50px;
     background: rgba(41, 50, 65, 1);
 }
 
@@ -2360,7 +2531,7 @@ footer {
     display: flex;
     gap: 22px;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
 }
 
 .forming-products-text {
@@ -2785,6 +2956,32 @@ footer {
     aspect-ratio: 4/3;
 }
 
+/* Additive Manufacturing sample products - fill container fully */
+#additive-sample-products .sample-product-item img {
+    object-fit: cover;
+    background: transparent;
+}
+
+/* Inspection sample products - fit to photo size with rounded corners */
+#inspection-sample-products .sample-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+#inspection-sample-products .sample-product-item {
+    width: auto;
+}
+
+#inspection-sample-products .sample-product-item img {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    height: 220px;
+    width: auto;
+    object-fit: cover;
+}
+
 .sample-product-caption {
     color: #fff;
     font-size: 18px;
@@ -2946,6 +3143,7 @@ footer {
 
 .additive-materials {
     padding: 130px 0 130px;
+    background: #fff;
 }
 
 .additive-materials-content {
@@ -2976,6 +3174,13 @@ footer {
     line-height: 1.2;
     color: rgba(41, 50, 65, 1);
     margin-bottom: 24px;
+}
+
+.additive-process-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.55);
+    margin-bottom: 16px;
 }
 
 .additive-materials-list {
@@ -3162,6 +3367,23 @@ footer {
 }
 
 .special-feature-list li::marker {
+    color: #39A6D5;
+}
+
+/* Nested sub-list under Surface Treatments & Coatings */
+.special-sub-list {
+    list-style-type: circle;
+    padding-left: 30px;
+    margin-top: 8px;
+}
+
+.special-sub-list li {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.special-sub-list li::marker {
     color: #39A6D5;
 }
 
@@ -3619,7 +3841,7 @@ footer {
 }
 
 /* ================================
-   About Page Styles
+   About Page 
    ================================ */
 
 .about-hero {
@@ -3655,7 +3877,7 @@ footer {
 }
 
 .about-intro {
-    padding: 48px 0 80px;
+    padding: 20px 0 30px;
 }
 
 .about-intro-text {
@@ -3801,7 +4023,7 @@ footer {
 
 /* About Certificates Section */
 .about-certificates {
-    padding: 60px 0;
+    padding: 40px 0;
     background: rgba(41, 50, 65, 1);
     text-align: center;
 }
@@ -3824,7 +4046,7 @@ footer {
 
 /* About CTA Section */
 .about-cta {
-    padding: 60px 0;
+    padding: 20px 0;
     background: rgba(41, 50, 65, 1);
 }
 
