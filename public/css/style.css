@@ -820,14 +820,24 @@ nav a:hover {
 }
 
 .partners-page img {
+    width: 160px;
     height: 100px;
-    width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
 .partners-page img:hover {
     transform: scale(1.05);
+}
+
+.partners-page img.small {
+    width: 120px;
+    height: 75px;
+}
+
+.partners-page img.large {
+    width: 200px;
+    height: 125px;
 }
 
 .partners-dots {
@@ -855,6 +865,40 @@ nav a:hover {
 .partners-dot.active {
     background: #39A6D5;
     transform: scale(1.2);
+}
+
+/* Partners Section Mobile Styles */
+@media (max-width: 768px) {
+    .partners-carousel {
+        padding: 0 16px;
+    }
+
+    .partners-page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        justify-items: center;
+    }
+
+    .partners-page img {
+        width: 140px;
+        height: 80px;
+    }
+
+    .partners-title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .partners-page img.small-mobile {
+        width: 100px;
+        height: 60px;
+    }
+
+    .partners-page img.large-mobile {
+        width: 180px;
+        height: 130px;
+    }
 }
 
 /* Footer */

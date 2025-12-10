@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FXTD</title>
-    <link>https://qdfuxingtong.com/</link>
+    <link>http://localhost:33819/</link>
     <description>Recent content on FXTD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://qdfuxingtong.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:33819/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Additive Manufacturing</title>
-      <link>https://qdfuxingtong.com/additive-manufacturing/</link>
+      <link>http://localhost:33819/additive-manufacturing/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/additive-manufacturing/</guid>
+      <guid>http://localhost:33819/additive-manufacturing/</guid>
       <description></description>
     </item>
     <item>
       <title>Inspection</title>
-      <link>https://qdfuxingtong.com/inspection/</link>
+      <link>http://localhost:33819/inspection/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/inspection/</guid>
+      <guid>http://localhost:33819/inspection/</guid>
       <description></description>
     </item>
     <item>
       <title>Machining</title>
-      <link>https://qdfuxingtong.com/machining/</link>
+      <link>http://localhost:33819/machining/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/machining/</guid>
+      <guid>http://localhost:33819/machining/</guid>
       <description></description>
     </item>
     <item>
       <title>Special Process &amp; Assembly</title>
-      <link>https://qdfuxingtong.com/special-processes/</link>
+      <link>http://localhost:33819/special-processes/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/special-processes/</guid>
+      <guid>http://localhost:33819/special-processes/</guid>
       <description></description>
     </item>
     <item>
       <title>Casting</title>
-      <link>https://qdfuxingtong.com/casting/</link>
+      <link>http://localhost:33819/casting/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/casting/</guid>
+      <guid>http://localhost:33819/casting/</guid>
       <description></description>
     </item>
     <item>
       <title>Forging</title>
-      <link>https://qdfuxingtong.com/forging/</link>
+      <link>http://localhost:33819/forging/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/forging/</guid>
+      <guid>http://localhost:33819/forging/</guid>
       <description></description>
     </item>
     <item>
       <title>Forming</title>
-      <link>https://qdfuxingtong.com/forming/</link>
+      <link>http://localhost:33819/forming/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/forming/</guid>
+      <guid>http://localhost:33819/forming/</guid>
       <description></description>
     </item>
     <item>
       <title>About Us</title>
-      <link>https://qdfuxingtong.com/about/</link>
+      <link>http://localhost:33819/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/about/</guid>
+      <guid>http://localhost:33819/about/</guid>
       <description>&lt;h2 id=&#34;about-our-company&#34;&gt;About Our Company&lt;/h2&gt;&#xA;&lt;p&gt;We are a leading provider of innovative solutions across multiple industries.&lt;/p&gt;&#xA;&lt;h3 id=&#34;our-story&#34;&gt;Our Story&lt;/h3&gt;&#xA;&lt;p&gt;Founded with a vision to transform industries through technology and innovation, we have grown to become a trusted partner for businesses worldwide.&lt;/p&gt;&#xA;&lt;h3 id=&#34;our-mission&#34;&gt;Our Mission&lt;/h3&gt;&#xA;&lt;p&gt;To deliver exceptional products and services that exceed customer expectations while maintaining the highest standards of quality and integrity.&lt;/p&gt;&#xA;&lt;h3 id=&#34;our-values&#34;&gt;Our Values&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Innovation&lt;/li&gt;&#xA;&lt;li&gt;Excellence&lt;/li&gt;&#xA;&lt;li&gt;Integrity&lt;/li&gt;&#xA;&lt;li&gt;Customer Focus&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Aviation Products</title>
-      <link>https://qdfuxingtong.com/aviation/</link>
+      <link>http://localhost:33819/aviation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/aviation/</guid>
+      <guid>http://localhost:33819/aviation/</guid>
       <description></description>
     </item>
     <item>
       <title>Capabilities</title>
-      <link>https://qdfuxingtong.com/capabilities/</link>
+      <link>http://localhost:33819/capabilities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/capabilities/</guid>
+      <guid>http://localhost:33819/capabilities/</guid>
       <description>&lt;h2 id=&#34;our-capabilities&#34;&gt;Our Capabilities&lt;/h2&gt;&#xA;&lt;p&gt;We bring decades of experience and expertise to every project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;core-competencies&#34;&gt;Core Competencies&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Research and Development&lt;/li&gt;&#xA;&lt;li&gt;Engineering Design&lt;/li&gt;&#xA;&lt;li&gt;Manufacturing Excellence&lt;/li&gt;&#xA;&lt;li&gt;Quality Control&lt;/li&gt;&#xA;&lt;li&gt;Technical Support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Our team is equipped to handle projects of any scale and complexity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact Us</title>
-      <link>https://qdfuxingtong.com/contact/</link>
+      <link>http://localhost:33819/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/contact/</guid>
+      <guid>http://localhost:33819/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Industry News</title>
-      <link>https://qdfuxingtong.com/news/</link>
+      <link>http://localhost:33819/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/news/</guid>
+      <guid>http://localhost:33819/news/</guid>
       <description></description>
     </item>
     <item>
       <title>Material Supply &amp; Consumables</title>
-      <link>https://qdfuxingtong.com/material-supply/</link>
+      <link>http://localhost:33819/material-supply/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/material-supply/</guid>
+      <guid>http://localhost:33819/material-supply/</guid>
       <description></description>
     </item>
     <item>
       <title>Oil &amp; Gas</title>
-      <link>https://qdfuxingtong.com/oilgas/</link>
+      <link>http://localhost:33819/oilgas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/oilgas/</guid>
+      <guid>http://localhost:33819/oilgas/</guid>
       <description></description>
     </item>
     <item>
       <title>Products</title>
-      <link>https://qdfuxingtong.com/products/</link>
+      <link>http://localhost:33819/products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qdfuxingtong.com/products/</guid>
+      <guid>http://localhost:33819/products/</guid>
       <description>&lt;h2 id=&#34;our-products&#34;&gt;Our Products&lt;/h2&gt;&#xA;&lt;p&gt;We offer a comprehensive range of products designed to meet the needs of modern industries.&lt;/p&gt;&#xA;&lt;h3 id=&#34;product-line&#34;&gt;Product Line&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Advanced monitoring systems&lt;/li&gt;&#xA;&lt;li&gt;Custom solutions for industrial applications&lt;/li&gt;&#xA;&lt;li&gt;Quality assurance tools&lt;/li&gt;&#xA;&lt;li&gt;Safety equipment&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Contact us to learn more about our product offerings.&lt;/p&gt;</description>
     </item>
   </channel>
