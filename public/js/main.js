@@ -385,5 +385,39 @@ document.addEventListener('DOMContentLoaded', function () {
         }, { threshold: 0.3 });
 
         observer.observe(partnersSection);
+
+        // Overflow detection - enable wrapping when logos start getting clipped
+        function checkPartnersOverflow() {
+            const activePage = document.querySelector('.partners-page.active');
+            if (!activePage) return;
+
+            const carousel = document.querySelector('.partners-carousel');
+            if (!carousel) return;
+
+            // Temporarily remove wrap class to measure natural overflow
+            activePage.classList.remove('allow-wrap');
+
+            // Get the container width and the content scroll width
+            const containerWidth = activePage.clientWidth;
+            const scrollWidth = activePage.scrollWidth;
+
+            // If content overflows (even slightly), enable wrapping
+            if (scrollWidth > containerWidth + 10) {
+                partnersPages.forEach(page => page.classList.add('allow-wrap'));
+            } else {
+                partnersPages.forEach(page => page.classList.remove('allow-wrap'));
+            }
+        }
+
+        // Check overflow on load and resize
+        checkPartnersOverflow();
+        window.addEventListener('resize', checkPartnersOverflow);
+
+        // Also check when page changes
+        const originalShowPartnersPage = showPartnersPage;
+        showPartnersPage = function (pageIndex) {
+            originalShowPartnersPage(pageIndex);
+            setTimeout(checkPartnersOverflow, 50);
+        };
     }
 });

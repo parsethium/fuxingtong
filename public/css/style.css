@@ -804,13 +804,14 @@ nav a:hover {
     left: 0;
     right: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
+    overflow: hidden;
 }
 
 .partners-page.active {
@@ -867,6 +868,35 @@ nav a:hover {
     transform: scale(1.2);
 }
 
+/* Dynamic wrap class - added by JS when overflow is detected */
+.partners-page.allow-wrap {
+    flex-wrap: wrap;
+    overflow: visible;
+}
+
+/* Partners Section Tablet Styles */
+@media (max-width: 1200px) and (min-width: 769px) {
+    .partners-page {
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .partners-page img {
+        width: 120px;
+        height: 75px;
+    }
+
+    .partners-page img.small {
+        width: 90px;
+        height: 56px;
+    }
+
+    .partners-page img.large {
+        width: 150px;
+        height: 94px;
+    }
+}
+
 /* Partners Section Mobile Styles */
 @media (max-width: 768px) {
     .partners-carousel {
@@ -878,6 +908,7 @@ nav a:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
         justify-items: center;
+        overflow: visible;
     }
 
     .partners-page img {
